@@ -31,7 +31,7 @@ class VESCMessage(type):
         cls._fmt_fields = ''
         cls._field_names = []
         cls._field_scalars = []
-        for field, idx in zip(cls.fields, range(0, len(cls.fields))):
+        for field, idx in zip(cls.fields, list(range(0, len(cls.fields)))):
             cls._field_names.append(field[0])
             try:
                 cls._field_scalars.append(field[2])

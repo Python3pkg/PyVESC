@@ -27,7 +27,7 @@ def get_values_example():
 
                     # Print out the values
                     try:
-                        print(response.rpm)
+                        print((response.rpm))
 
                     except:
                         # ToDo: Figure out how to isolate rotor position and other sensor data
